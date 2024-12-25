@@ -1,26 +1,33 @@
 import TourInfo from "@/components/template/TourInfo";
 import { fetchTour, fetchTourById } from "@/utils/services";
-import { cookies } from "next/headers";
+
 
 export const revalidate = 24 * 60 * 60;
 
 export async function generateStaticParams() {
-  const tours = await fetchTour();
+  try {
+    const tours = await fetchTour();
+    if (!Array.isArray(tours)) {
+      throw new Error("Invalid response from fetchTour()");
+    }
 
-  return tours.map((tour) => ({
-    tourId: tour.id.toString(),
-  }))
+    return tours.map((tour) => ({
+      tourId: tour.id.toString(),
+    }));
+  } catch (error) {
+    console.error("Error fetching tours:", error);
+    return [];  // Return an empty array in case of error
+  }
 }
 
+
 async function TourDetails({ params }) {
-  const storedCookie = cookies();
-  const token = storedCookie.get('accessToken')?.value;
 
   const { tourId } = await params;
   const tour = await fetchTourById(tourId);
 
   return (
-    <TourInfo tour={tour} token={token} />
+    <TourInfo tour={tour} />
   )
 }
 

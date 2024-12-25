@@ -15,8 +15,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Basket } from '@/utils/services';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Cookies from 'js-cookie';
 
-function TourInfo({ tour, token }) {
+function TourInfo({ tour }) {
+  const token = Cookies.get('accessToken');
+  console.log(token)
   const [isInBasket, setIsInBasket] = useState(false);
   const router = useRouter();
 
