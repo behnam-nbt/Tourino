@@ -1,0 +1,70 @@
+.table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0; 
+    border: 1px solid #00000033;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.headerCell {
+    padding: 8px;
+    text-align: center;
+    background-color: #f7f7f7;
+    font-weight: bold;  
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cell {
+    padding: 8px;
+    text-align: center;
+}
+
+.table tbody {
+    font-size: 14px;
+    font-weight: 300;
+    color: #323232;
+}
+
+.table thead tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table thead tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.emptyMessage {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .table .orderNumberCell {
+      display: none;
+    }
+  
+    .table thead th.orderNumberHeader {
+      display: none;
+    }
+
+    .createdAtCell{
+        font-size: 9px;
+    }
+    
+    .amountCell, .typeCell {
+        font-size: 13px;
+    }
+  }
+  

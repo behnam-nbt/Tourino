@@ -1,0 +1,15 @@
+.loginIcon {
+    display: none;
+}
+
+.loginIcon svg {
+    font-size: 24px;
+}
+
+@media(max-width: 768px) {
+    .loginIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

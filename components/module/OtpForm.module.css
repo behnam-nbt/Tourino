@@ -1,0 +1,85 @@
+.inputContainer {
+    margin-top: 50px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    width: 491px;
+    margin: 2rem auto;
+}
+
+.inputBox label {
+    font-size: 1rem;
+    color: #000000a2;
+}
+
+.inputBox input {
+    border: 1px solid #00000040;
+    border-radius: 6px;
+    padding: 8px;
+    direction: ltr;
+    outline: none;
+}
+
+.submit {
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: #28A745;
+    margin-top: 2rem;
+    color: #FFFFFF;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.error {
+    color: #f80101;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.modalTitle {
+    text-align: center;
+    color: #282828;
+}
+
+.modalTitle h2 {
+    margin: 1rem 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.modalTitle p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #282828;
+}
+
+.timer {
+    margin-top: 1rem;
+    font-size: 12px;
+    font-weight: 300;
+    color: #282828;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    .inputBox {
+        width: 100%;
+    }
+    
+    .submit {
+        margin-top: 1rem;
+    }
+
+    .modalTitle h2 {
+        font-size: 22px;
+    }
+
+    .modalTitle p {
+        font-size: 14px;
+    }
+}

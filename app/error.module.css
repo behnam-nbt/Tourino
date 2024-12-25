@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container img {
+    width: 555px;
+    height: auto;
+}
+
+.container h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #282828;
+}
+
+.container p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #282828;
+}
+
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .container img {
+        width: 322px;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .container p {
+        font-size: 20px;
+        margin-bottom: 3rem;
+    }
+}

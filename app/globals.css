@@ -1,19 +1,22 @@
+@font-face {
+  font-family: 'Yekan';
+  src: url('/fonts/Yekan.eot') format('embedded-opentype'),
+       url('/fonts/Yekan.woff') format('woff'),
+       url('/fonts/Yekan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: inherit;
 }
 
 body {
@@ -22,12 +25,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* font-family: 'Yekan'; */
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Yekan', sans-serif;
 }
 
 a {
@@ -35,8 +40,3 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}

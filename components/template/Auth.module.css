@@ -1,0 +1,31 @@
+.modalbox {
+    width: 571px;
+    height: auto;
+    background-color: #FFFFFF;  
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0.8rem;
+    left: 1.7rem;
+    cursor: pointer;
+}
+
+.close svg {
+    font-size: 24px;
+    color: #171717;
+}
+
+@media(max-width: 768px) {
+    .modalbox {
+        width: 358px;
+    }
+
+    .close {
+        left: 1rem;
+    }
+}

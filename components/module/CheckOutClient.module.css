@@ -1,0 +1,85 @@
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    padding: 1rem 4rem;
+}
+
+.userDetails {
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.userTitle {
+    display: flex;
+    align-items: center;
+}
+
+.userTitle svg {
+    font-size: 24px;
+    margin-left: 1rem;
+}
+
+.userTitle h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.tourDetails {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.tourTitle,
+.tourPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.tourTitle {
+    border-bottom: 1px dashed #00000080;
+}
+
+.tourTitle h2 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.tourTitle p {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(115, 115, 115);
+}
+
+.tourPrice span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #282828;
+}
+
+.tourPrice p {
+    font-size: 28px;
+    font-weight: 500;
+    color: #009ECA;
+}
+
+.accept {
+    padding: 0.5rem 1rem;
+}
+
+.tourDetails button {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    background-color: #28A745;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 10px;
+}

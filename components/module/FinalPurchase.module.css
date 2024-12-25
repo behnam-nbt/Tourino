@@ -1,0 +1,16 @@
+.inputBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.customInput {
+    width: 255px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #00000080;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: 1rem;
+}

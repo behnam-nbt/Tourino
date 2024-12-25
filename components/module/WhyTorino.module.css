@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  padding: 94px 44px 0 44px;
+}
+
+.right {
+  width: 50%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title h2 {
+  font-weight: 800;
+  font-size: 40px;
+  padding-right: 1rem;
+}
+
+.title span {
+  color: #28A745;
+}
+
+.mark {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#28A745, #10411B);
+}
+
+.mark p {
+  font-size: 38px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.description {
+  margin-top: 0.5rem;
+}
+
+.description h4 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #282828;
+}
+
+.description p {
+  margin-top: 0.5rem;
+  color: #282828;
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+  line-height: 2;
+  text-align: justify;
+  word-wrap: break-word; 
+}
+
+@media(max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;  
+    margin-top: 1rem;
+    padding-top: 0;
+  }
+
+  .right {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .title {
+    justify-content: flex-start;
+  }
+
+  .title h2 {
+    font-size: 24px;
+  }
+
+  .mark {
+    width: 34px;
+    height: 34px;
+  }
+
+  .mark p {
+    font-size: 24px;
+  }
+
+  .description {
+    display: none;
+  }
+}

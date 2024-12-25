@@ -1,0 +1,333 @@
+.container {
+    display: flex;
+    padding: 1rem 5rem;
+}
+
+.content {
+    width: 70%;
+}
+
+.sideBar {
+    width: 31%;
+    height: 170px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    margin-left: 1rem;
+    overflow: hidden;
+}
+
+.sideBar ul li {
+    list-style: none;
+}
+
+.sideBar ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #282828;
+    border-bottom: 1px solid #00000033;
+    padding: 13px;
+    margin: 0 8px;
+}
+
+.sideBar ul li:last-child a {
+    border: none;
+}
+
+.sideBar ul li svg {
+    font-size: 20px;
+    margin-left: 1rem;
+}
+
+.active {
+    background-color: #28A74540;
+}
+.active a {
+    color: #28A745!important;
+}
+
+/* Start styling for profile section */
+
+.profileContainer {
+    width: 100%;
+}
+
+.accountInfo,
+.userInfo,
+.bankInfo {
+    border: #00000033 1px solid;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.userInfo,
+.bankInfo {
+    padding: 0;
+}
+
+.accInfoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btnBox {
+    border-top: 1px solid #00000033;
+    padding: 0.5rem 1rem;
+}
+
+.submit,
+.cancel {
+    width: 144px;
+    margin-left: 0.5rem;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.submit {
+    background-color: #28A745;
+}
+
+.cancel {
+    background-color: #ffffff;
+    border: 1px solid #28A745;
+    color: #282828;
+}
+
+.accountInfo h2,
+.userInfo h2,
+.bankInfo h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.mobileInfo,
+.emailInfo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.mobileInfo span,
+.emailInfo span,
+.userInfo span,
+.numbers span {
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.mobileInfo span,
+.surname span,
+.identity span,
+.gender span,
+.birthday span,
+.numbers span {
+    margin-left: 2rem;
+}
+
+.emailInfo {
+    justify-content: space-evenly;
+}
+
+.editInfo {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #009ECA;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Start User Info Section */
+
+.top,
+.down {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.topInput {
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5rem 1rem
+}
+
+.inputBox input {
+    display: block;
+}
+
+.inputBox span {
+    font-size: 9px;
+}
+
+.surname,
+.identity,
+.gender,
+.birthday,
+.numbers {
+    display: flex;
+    align-items: center;
+}
+
+.numbers {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+/* End User Info Section */
+
+.emailEditContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.customInput {
+    width: 255px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #00000080;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: 1rem;    
+}
+
+.errorBorder {
+    border: 1px solid red;
+}
+
+
+/* End styling for profile section */
+
+/* Start responsive Design */
+
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .sideBar {
+        width: 100%;
+        margin-bottom: 2rem;
+        border: none;
+        height: auto;
+    }
+
+    .active {
+        background: none;
+    }
+
+    .active a {
+        border-bottom: 2px solid #28A745!important;
+    }
+
+    .sideBar ul {
+        border-bottom: solid 1px #00000033;
+    }
+
+    .sideBar ul li {
+        display: inline-block;
+    }
+
+    .sideBar ul li a {
+        border: none;
+        padding: 0.5rem 3.5rem;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .accInfoContainer {
+        flex-direction: column;
+    }
+
+    .mobileInfo,
+    .emailInfo {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .top,
+    .down {
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+    }
+
+    .surname,
+    .identity,
+    .gender,
+    .birthday,
+    .numbers {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .customInput {
+        width: 100%;
+        margin: 0.5rem auto;
+    }
+
+    .emailEditContainer {
+        width: 100%;
+    }
+
+    .emailEditContainer form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .emailEditContainer input {
+        margin-left: 0.5rem;
+    }
+
+    .btnBox {
+        border: none;
+    }
+
+    .submit, .cancel {
+        width: 48.9%;
+        margin-left: 0.2rem;
+    }
+}
+
+@media(max-width: 480px) {
+    .sideBar {
+        width: 328px;
+        margin: 0 auto 2rem auto;
+    }
+
+    .sideBar ul li svg {
+        font-size: 16px;
+    }
+
+    .sideBar ul li a {
+        font-size: 12px;
+        padding: 0 8px;
+    }
+}

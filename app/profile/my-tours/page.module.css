@@ -1,0 +1,172 @@
+.container,
+.box {
+    border: 1px solid #00000033;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.box {
+    margin-bottom: 1rem;
+}
+
+.boxHeader,
+.destination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.boxHeader h2,
+.destination h2 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.vehicle p,
+.destName p,
+.tourNumber span,
+.price span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.vehicle svg {
+    font-size: 24px;
+}
+
+.boxHeader span {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 1px 9px;
+    border-radius: 27px;
+}
+
+.destination {
+    justify-content: flex-start;
+    border-bottom: 1px solid #00000033;
+}
+
+.destination h2 {
+    font-weight: 600;
+}
+
+.destName,
+.endDate,
+.tourNumber,
+.price,
+.vehicle {
+    display: flex;
+    align-items: center;
+}
+
+.destName p,
+.endDate p {
+    color: #00000099;
+    margin-right: 1rem;
+}
+
+.endDate {
+    margin-right: 3rem;
+}
+
+.downSection {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.tourNumber {
+    border-left: 1px solid #00000033;
+    padding: 0 1rem;
+}
+
+.tourNumber span,
+.price span {
+    color: #00000080;
+}
+
+.tourNumber p,
+.price p {
+    color: #282828;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.downSection .price,
+.downSection p {
+    margin-right: 1rem;
+}
+
+@media(max-width: 768px) {
+    .container {
+        border: none;
+    }
+
+    .boxHeader {
+        position: relative;
+        padding: 1rem 0.5rem;
+        justify-content: flex-start;
+    }
+
+    .vehicle {
+        margin-right: 2rem;
+    }
+
+    .boxHeader svg {
+        font-size: 18px;
+    }
+
+    .boxHeader h2,
+    .destination h2 {
+        font-size: 12px;
+    }
+
+    .destination {
+        padding: 0 1rem;
+    }
+
+    .situation {
+        position: absolute;
+        top: 0;
+        left: 0.5rem;
+    }
+
+    .situation span {
+        font-size: 6px;
+    }
+
+    .destination {
+        height: 80px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .destName,
+    .endDate {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .endDate {
+        margin-right: 0;
+    }
+
+    .downSection {
+        padding: 0.5rem 1rem;
+    }
+
+    .tourNumber p,
+    .price p {
+        font-size: 12px;
+    }
+
+    .downSection .price,
+    .downSection p {
+        margin-right: 0.5rem;
+    }
+}

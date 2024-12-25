@@ -1,16 +1,10 @@
-import localFont from "next/font/local";
+import localFont from 'next/font/local'
+import { UserProvider } from "@/context/AuthContext";
+import Layout from "@/components/layout/Layout";
 import "./globals.css";
+import TanstackQueryProvider from '@/components/partials/providers/TanstackQueryProvider';
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const yekan = localFont({ src: '../public/fonts/Yekan.ttf' });
 
 export const metadata = {
   title: "Create Next App",
@@ -19,9 +13,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+    <html lang="fa" dir="rtl">
+      <body className={yekan.className}>
+        <UserProvider>
+          <TanstackQueryProvider>
+            <Layout>
+              {children}
+            </Layout>
+          </TanstackQueryProvider>
+        </UserProvider>
       </body>
     </html>
   );

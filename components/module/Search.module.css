@@ -1,0 +1,195 @@
+/* Search.module.css */
+
+.container {
+    width: 874px;
+    margin: 1rem auto;
+    padding: 5px 10px;
+    border: 1px solid #00000026;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+}
+
+.field {
+    position: relative;
+}
+
+.field svg {
+    font-size: 20px;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #555;
+    font-size: 16px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 35px;
+    /* To make space for the icon */
+    font-size: 16px;
+    border: none;
+    border-left: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.input::placeholder {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.dropdown {
+    position: absolute;
+    top: 4.3rem;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 11px;
+    z-index: 10;
+    width: 218px;
+    max-height: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    overflow-y: auto;
+    /* Allow vertical scrolling */
+    scrollbar-width: none;
+    /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar in Internet Explorer */
+}
+
+.dropdown::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar in Chrome, Safari */
+}
+
+
+.headOrigin {
+    background-color: #F8F8F8;
+    padding: 0.2rem 0.5rem;
+}
+
+.headOrigin span {
+    width: 100%;
+    font-weight: 300;
+    font-size: 13px;
+    color: #282828B2;
+}
+
+.dropdown .dropdownTitle {
+    background-color: #F8F8F8;
+    padding-right: 1rem;
+    font-size: 13px;
+    font-weight: 300;
+    color: #282828;
+}
+
+.dropdownItem {
+    padding: 0.3rem 0.7rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #0000001F;
+}
+
+.dropdownItem:last-child {
+    border: none;
+}
+
+.dropdownItem svg {
+    font-size: 20px;
+    margin-left: 0.7rem;
+    color: #282828;
+}
+
+.dropdownItem p {
+    color: #282828;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.button {
+    width: 190px;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #28A745;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+@media(max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 boxes per row */
+        grid-template-rows: auto;
+        /* Automatically adjust row height */
+        grid-auto-flow: row;
+        /* Flow items in rows */
+        gap: 10px;
+        width: 100%;
+        border: none;
+    }
+
+    .container> :nth-child(3) {
+        /* Target the third box */
+        grid-column: span 2;
+        /* Make it span two columns */
+    }
+
+    .field {
+        border: 1px solid #00000026;
+        padding: 8px 12px;
+        border-radius: 12px;
+    }
+
+    .field .icon {
+        position: absolute;
+        top: 50;
+        right: 35%;
+    }
+
+    .field:nth-child(3) svg {
+        right: 42%;
+    }
+
+    .input {
+        width: 100%;
+        border: none;
+        text-align: center;
+    }
+
+    .button {
+        width: 97%;
+        grid-column: span 2;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 480px) {
+    .field:nth-child(1) svg {
+        right: 30%;
+    }
+
+    .field:nth-child(2) svg {
+        right: 25%;
+    }
+
+    .field:nth-child(3) svg {
+        right: 40%;
+    }
+}

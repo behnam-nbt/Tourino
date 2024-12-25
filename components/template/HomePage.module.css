@@ -1,0 +1,71 @@
+.mainContainer {
+    width: 100%;
+}
+
+.pageTitle {
+    text-align: center;
+    padding: 8px;
+}
+
+.pageTitle h2 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.pageTitle span {
+    color: #28A745;
+}
+
+.container {
+    width: 1244px;
+    margin: 5rem auto;
+}
+
+.container h2 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .container h2 {
+        margin-right: 1rem;
+        font-size: 20px;
+    }
+
+    .pageTitle h2 {
+        font-size: 1rem;
+    }
+
+    .cardContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 480px) {
+    .cardContainer {
+        grid-template-columns: 1fr;
+    }
+    .showMoreButton {
+        display: flex;
+        align-items: center;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background: none;
+        color: #00000080;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      
+}

@@ -1,0 +1,352 @@
+/* start css for header in the desktop scale */
+.header {
+    min-width: 1440px;
+    margin: 0 auto;
+    padding: 13px 0;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px 0px #00000029;
+}
+
+.headContainer {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+}
+
+.headContainer img {
+    width: 146px;
+    height: 44px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.menu ul {
+    width: 499px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 3px;
+}
+
+.menu ul li a {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.noBorder {
+    position: relative;
+}
+
+.loginContainer .btnBox,
+.noBorder {
+    width: 166px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #28A745;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btnBox {
+    border-radius: 8px;
+    border: 2px solid #28A745;
+}
+
+.btnSubBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnBox svg,
+.noBorder svg {
+    font-size: 24px;
+}
+
+.btnBox button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    color: #28A745;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.noBorder span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.userTab {
+    display: flex;
+    align-items: center;
+}
+
+.userTab button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #28A745;
+    line-height: 0.5rem;
+}
+
+.userMenu {
+    width: 246px;
+    border-radius: 11px;
+    position: absolute;
+    top: 4.1rem;
+    background-color: #FFFFFF;
+    left: 0;
+}
+
+.phone {
+    background-color: #f4f4f4;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.phone .mobileIcon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.mobileIcon svg {
+    font-size: 16px;
+    color: #696969;
+}
+
+.phone span {
+    color: #10411B;
+}
+
+.goToProfile {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #0000001F;
+}
+
+.goToProfile span {
+    color: #282828;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.goToProfile .profIcon {
+    margin-left: 1rem;
+    line-height: 0.4rem;
+}
+
+.profIcon svg {
+    font-size: 20px;
+    color: #282828;
+}
+
+.logout button {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #D40000;
+}
+
+.logout svg {
+    font-size: 20px;
+    margin-left: 1rem;
+}
+
+.logout span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* end css for header in the desktop scale */
+
+/* start css for footer in the desktop scale */
+
+.footer {
+    border-top: 1px solid #00000033;
+    margin: 23px 44px;
+}
+
+.lastSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 23px;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.list ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 0.5rem;
+}
+
+.right h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.lastSection .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: left;
+}
+
+.left .logo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.namad {
+    width: 100%;
+}
+
+.left .logo img {
+    width: 146px;
+    height: 44px;
+    margin-bottom: 0.5rem;
+}
+
+.left .logo p {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.namad img {
+    margin-right: 2rem;
+}
+
+.copyRight {
+    text-align: center;
+    border-top: 1px solid #00000029;
+    padding: 1rem;
+}
+
+.copyRight p {
+    font-weight: 400;
+    font-size: 15;
+}
+
+/* end css for footer in the desktop scale */
+
+/* Start Responsive Design */
+
+@media(max-width: 768px) {
+    .header {
+        min-width: 480px;
+    }
+
+    .loginContainer {
+        margin-left: 1rem;
+    }
+
+    .loginContainer .btnBox {
+        width: 100%;
+        height: 100%;
+        margin-left: 1rem;
+    }
+
+    .btnSubBox {
+        display: none;
+    }
+
+    .logo,
+    .menu {
+        display: none;
+    }
+
+    .headContainer {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .lastSection {
+        grid-template-columns: 1fr;
+    }
+
+    .right {
+        width: 100%;
+        margin-bottom: 1rem;
+        justify-content: space-between;
+    }
+
+    .right h2 {
+        font-size: 22px;
+    }
+
+    .list ul li a {
+        font-size: 1rem;
+    }
+
+    .lastSection .left {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .left .logo img {
+        width: 100px;
+        height: 30px;
+    }
+
+    .namad{
+        width: 50%;
+    }
+
+    .namad img {
+        width: 35px;
+        height: 38px;
+        margin-right: 0;
+        margin-left: 2rem;
+    }
+
+    .left .logo p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 480px) {
+    .namad img {
+        margin-left: 1rem;
+    }
+}

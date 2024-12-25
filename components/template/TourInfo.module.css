@@ -1,0 +1,186 @@
+.container {
+    width: 1188px;
+    height: 427px;
+    margin: 110px 126px;
+    background-color: #ffffff;
+    border: solid 1px #00000033;
+    border-radius: 10px;
+}
+
+.imageBox img {
+    width: 397px;
+    height: 265px;
+    border-radius: 12px;
+    margin: 39px 15px;
+}
+
+.upSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imageBox {
+    width: 38%;
+}
+
+.tourHead {
+    width: 62%;
+}
+
+.tourTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.tourHead h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.tourHead p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #282828;
+}
+
+.tourServices .options {
+    width: 100%;
+}
+
+.options ul {
+    margin-top: 1rem;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.options ul li {
+    margin-left: 2rem;
+    font-size: 20px;
+    font-weight: 400;
+    color: #7D7D7D;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.actions p {
+    font-weight: 500;
+    font-size: 28px;
+    color: #009ECA;
+}
+
+.actions span {
+    color: #282828;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 204px;
+    height: 55px;
+    background-color: #28A745;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.downSection {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+}
+
+.downInfo {
+    text-align: center;
+}
+
+.downInfo p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    color: #444444;
+}
+
+.icon h6 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 0.4rem;
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        border: none;
+        margin: 20px 0;
+    }
+
+    .upSection {
+        flex-direction: column;
+    }
+
+    .imageBox,
+    .tourHead {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imageBox {
+        text-align: center;
+    }
+
+    .tourTitle {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 1rem;
+    }
+
+    .tourTitle h1 {
+        font-size: 24px;
+    }
+
+    .tourTitle p {
+        margin-top: 0.8rem;
+        font-size: 15px;
+    }
+
+    .options ul {
+        justify-content: center;
+    }
+
+    .options ul li {
+        font-size: 13px;
+    }
+
+    .actions {
+        flex-direction: row-reverse;
+    }
+
+    .actions button {
+        width: 154px;
+        height: 42px;
+        font-size: 20px;
+    }
+
+}
