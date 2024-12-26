@@ -19,7 +19,7 @@ import Cookies from 'js-cookie';
 
 function TourInfo({ tour }) {
   const token = Cookies.get('accessToken');
-  console.log(token)
+  console.log(token)  
   const [isInBasket, setIsInBasket] = useState(false);
   const router = useRouter();
 
