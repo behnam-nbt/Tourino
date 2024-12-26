@@ -11,6 +11,7 @@ import Services from "../module/Services";
 
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'; // Import CSS
 
 function HomePage({ posts }) {
   const [filteredPosts, setFilteredPosts] = useState(posts);
@@ -72,7 +73,7 @@ function HomePage({ posts }) {
         <WhyTorino />
       </div>
       <Services />
-      <ToastContainer />
+      <ToastContainer position="bottom-right" />
     </div>
   );
 }
